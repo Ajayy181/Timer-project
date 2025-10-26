@@ -1,0 +1,182 @@
+body {
+  font-family: Arial;
+  background-color: black;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  
+
+}
+
+.timer-input {
+  width: 180px;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.5px;
+  padding: 10px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+
+}
+
+.button-element {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.start-button {
+  background-color: rgb(12, 48, 12);
+  color: rgb(2, 247, 2);
+  border-width: 0px;
+  border-style: solid;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(65, 141, 65)
+}
+
+.start-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.start-button:active {
+  opacity: 0.4;
+}
+
+.reset-button {
+  background-color: rgb(80, 10, 10);
+  color: rgb(255, 0, 0);
+  border: none;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(134, 52, 52);
+}
+
+.reset-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.reset-button:active {
+  opacity: 0.4;
+}
+
+.pause-button {
+  background-color: rgba(147, 121, 29, 0.973);
+  color: rgb(255, 255, 0);
+  border: none;
+  font-size: 20px;
+  padding: 5px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgb(132, 132, 63);
+}
+
+.pause-button:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.pause-button:active {
+  opacity: 0.4;
+}
+
+.timer-input-div {
+  display: flex;
+  justify-content: center;
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+
+.timer-countdown {
+  font-family: monospace;
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.progress-bar-div {
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  position: relative;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+.svg-circle {
+  background: transparent;
+  width: 300px;
+  height: 300px;
+}
+
+.progress-bar-ring {
+  fill: none;
+  stroke: white;
+  stroke-width: 8px;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%; 
+  transition: stroke-dashoffset linear 1s;
+  box-shadow: 8px 8px 0px white;
+}
+
+.background-ring {
+  stroke-width: 8px;
+  stroke: rgb(53, 50, 50);
+  fill: none;
+}
+
+.timer-header {
+  color: white;
+  font-size: 15px;
+  display: inline-block;
+  position: absolute;
+}
+
+.timer-ending {
+  color: red;
+  stroke: red;
+  animation: blink 0.3s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.3; }
+}
+
+.timer-ended {
+  color: red;
+  stroke: red;
+}
+
+.progress-bar-ring-pause {
+  transition: none;
+}
+
+.stopwatch-image {
+  width: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.stopwatch-image-div {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}

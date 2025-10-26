@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The timer project</title>
+    <link rel="stylesheet" href="timer.css">
+  </head>
+  <body>
+    <div class="timer-header">Timer Countdown</div>
+    <div class="stopwatch-image-div">
+      <a href="http://127.0.0.1:5500/Main%20Stopwatch%20Project/stopwatch.html" target="_blank"><img class="stopwatch-image" src="stopwatch.png"></a>
+    </div>
+
+    <div class="progress-bar-div">
+      <svg class="svg-circle">
+        <circle r="120" cx="150" cy="150" class="background-ring"/>
+        <circle r="120" cx="150" cy="150" class="progress-bar-ring js-progress-bar-ring"></circle>
+      </svg>
+      <div class="timer-countdown js-timer-countdown"></div>
+    </div>
+
+    <div class="timer-input-div">
+      <input type="number" placeholder="Input in Seconds!" class="timer-input js-timer-input">
+    </div>
+
+    <div class="button-element">
+      <button class="start-button js-start-button">start</button>
+      <button class="pause-button js-pause-button">pause</button>
+      <button class="reset-button js-reset-button">reset</button>
+    </div>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
